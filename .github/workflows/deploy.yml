@@ -24,7 +24,7 @@ jobs:
       - uses: pulumi/actions@v4
         with:
           command: up        # This CREATES the resources
-          stack-name: dev    # Matches the stack you initialized
+          stack-name: myworkshop/dev    # Matches the stack you initialized
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
           # This connects to your specific OIDC setup

@@ -19,7 +19,7 @@ jobs:
       - uses: pulumi/actions@v4
         with:
           command: destroy   # This DELETES the resources
-          stack-name: dev
+          stack-name: myworkshop/dev
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
           # Must match your OIDC environment path exactly
